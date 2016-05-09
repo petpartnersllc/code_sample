@@ -12,7 +12,7 @@ defmodule SandBoxIntegrationTest do
     # If there is an exists version of this file, we want to delete it
     # We'll create a new version to run our tests against after this block
     case ScaffoldHelper.get_file_id("pp_doc.txt", current_token) do
-      0 ->
+      nil ->
         nil
       file_id ->
         ScaffoldHelper.delete_file!(file_id, current_token)
