@@ -77,6 +77,28 @@ defmodule ScaffoldHelper do
     end
   end
 
+  def get_file_id(filename, token) do
+    case HTTPoison.get! "https://api.box.com/2.0/folders/0/items", %{Authorization: "Bearer #{token}"} do
+      %{status_code: 200, body: body} ->
+        body
+        |> Poison.decode!
+        |> Map.get("entries")
+        |> Enum.find(%{}, fn (x) -> x["name"] == filename end)
+        |> Map.get("id")
+      %{status_code: status_code, body: body} ->
+        {:error, "Failed to retreive root folder contents.  Received #{status_code}: #{body}"}
+    end
+  end
+
+  def get_file_id!(filename, token) do
+    case get_file_id(filename, token) do
+      {:ok, file_id} ->
+        file_id
+      {_, error} ->
+        raise error
+    end
+  end
+
   @doc """
   Deletes an unlocked file
   """
