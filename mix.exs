@@ -28,6 +28,7 @@ defmodule SandBox.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [{:httpoison, "~> 0.8.3"},
-     {:poison, "~> 2.1"}]
+     {:poison, "~> 2.1"},
+     {:jose, "~> 1.7"}]
   end
 end
