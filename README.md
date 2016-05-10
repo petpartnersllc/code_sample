@@ -1,19 +1,23 @@
-# SandBox
-In the SandBox exercise, you'll be using the Elixir language to interact with the [Box](https://www.box.com) API.  The scaffolding you're given will create and destroy a file for you to create and delete comments against.
+# Code Sample
+We do a lot of development work in the Elixir language.  We're passionate about the language and we also believe one of the best ways to evaluate developers is by looking at code they've written.  Don't worry if you aren't intimately familiar with Elixir.  We're open to developers who can quickly pick up at least the basics of the language and are excited about learning more and using it on a daily basis.  If you've worked with Elixir before, this might take an hour or two to complete.  If you're new to the language, it could be a half day, or the better part of a weekend if you really dive into the language.  It's really up to you.
 
-# Objectives
+For the code sample, you'll be using Elixir to interact with the [Box](https://www.box.com) API as the first step in our application process. Box allows users to create comments about a file.  At a minimum, we'd like you to write the code and tests to create, get, update, and delete a comment about a file.  We've created the scaffolding to get you started, including functions to upload and destroy a file, as well test setup and tear down, and a sample test.
+
+# Instructions
 
 1) Fork this repository
 
 2) Signup for a Box developer account
 
-3) Create an app only user (keep note of the user ID, you'll need it):
+3) Create an app only user your Box account (keep note of the user ID, you'll need it):
     
     curl https://api.box.com/2.0/users -H "Authorization: Bearer ACCESS_TOKEN" -d '{"name": SOME_NAME, "is_platform_access_only": true}' -X post
 
-4) Make sure all tests under test/integration/ are passing and add any new tests you feel are important
+4) Write your code and tests to go with it
 
-5) Create a pull request and give us a heads up.
+4) Make sure all tests are passing
+
+5) Email us a link to your repository. 
 
 # Learning Resources
 Elixir is a functional language which lives on top of the Erlang Virtual Machine, just as Groovy or Clojure live on top of the Java Virtual Machine.  We at Pet Partners are functional programming enthusiest and have chosen to write all new software in Elixir wherever possible.  We recognize that functional programming requires a much different mindset and may not be for everyone.  Because of this, we've developed this simple programming assignment to determine if a potential candidate is a good match.
