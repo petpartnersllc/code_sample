@@ -1,4 +1,4 @@
-defmodule SandBox.Authentication do
+defmodule CodeSample.Authentication do
   use GenServer
   @moduledoc """
   This module handles authenitcation tokens along with token refresh.
@@ -16,7 +16,7 @@ defmodule SandBox.Authentication do
   @doc """
   The init function creates the necessary ETS table for storing the auth token.
   This method is intended for GenServer's consumption, not the end user of this module.
-  The user should instead call `SandBox.Authentication.start_link`
+  The user should instead call `CodeSample.Authentication.start_link`
   """
   def init(cycle) do
     # Refresh tokan after `cycle` milliseconds.  Should be less than 3621000

@@ -1,2 +1,0 @@
-defmodule SandBox do
-end
