@@ -31,6 +31,6 @@ use Mix.Config
 config :sand_box, box_pem_key: Path.expand("~/.ssh/box-2048.pem")
 config :sand_box, box_api_key: ""
 config :sand_box, box_api_secret: ""
-config :sand_box, box_user_id: ""
+config :sand_box, box_user_id: "" # The user id created in objective step 3
 config :sand_box, box_key_id:  ""
 

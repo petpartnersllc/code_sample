@@ -7,7 +7,9 @@ In the SandBox exercise, you'll be using the Elixir language to interact with th
 
 2) Signup for a Box developer account
 
-3) Authenticate to the Box API
+3) Create an app only user (keep note of the user ID, you'll need it):
+    
+    curl https://api.box.com/2.0/users -H "Authorization: Bearer ACCESS_TOKEN" -d '{"name": SOME_NAME, "is_platform_access_only": true}' -X post
 
 4) Make sure all tests under test/integration/ are passing and add any new tests you feel are important
 
