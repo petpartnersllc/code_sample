@@ -1,7 +1,7 @@
 # Code Sample
 At Pet Partners, we write a lot of code in Elixir.  We're passionate about the language and we also believe one of the best ways to evaluate developers is by looking at code they've written.  Don't worry if you aren't intimately familiar with Elixir.  We're open to developers who can quickly pick up at least the basics of the language and are excited about learning more and using it on a daily basis.  If you've worked with Elixir before, this exercise might take you an hour or two to complete.  If you're new to the language, it could be a half day, or the better part of a weekend if you really dive into the language.  It's really up to you.
 
-For the code sample, you'll be using Elixir to interact with the [Box API](https://box-content.readme.io/reference) as the first step in our application process. In addition to file syncing and sharing, [Box](https://www.box.com) allows users to create comments about a file.  At a minimum, we'd like you to write the code and the appropriate associated tests to create, get, update, and delete a comment about a file.  We've created some scaffolding to get you started, including functions to upload and destroy a file on which you can comment, setup and tear down functions for your tests, and a sample test.
+For the code sample, you'll be using Elixir to interact with the [Box API](https://box-content.readme.io/reference) as the first step in our application process. In addition to file syncing and sharing, [Box](https://www.box.com) allows users to create comments about a file.  At a minimum, we'd like you to write the code and the appropriate associated tests to create, get, update, and delete a comment about a file.  We've created some scaffolding to get you started, including functions to upload and destroy a file on which you can comment, setup and tear down functions for your tests, and a sample test file. If you're looking for a jumping off point, try test/integration/code_sample_integration_test.exs.
 
 # Instructions
 
@@ -9,7 +9,7 @@ For the code sample, you'll be using Elixir to interact with the [Box API](https
 
 2) Signup for a Box developer account
 
-3) Create an app only user your Box account (keep note of the user ID, you'll need it):
+3) Create an app only user in your Box account (keep note of the user ID, you'll need it):
     
     curl https://api.box.com/2.0/users -H "Authorization: Bearer ACCESS_TOKEN" -d '{"name": SOME_NAME, "is_platform_access_only": true}' -X post
 
@@ -20,7 +20,7 @@ For the code sample, you'll be using Elixir to interact with the [Box API](https
 5) Email us a link to your repository. 
 
 # Learning Resources
-Elixir is a functional language which lives on top of the Erlang Virtual Machine, just as Groovy or Clojure live on top of the Java Virtual Machine.  We at Pet Partners are functional programming enthusiest and have chosen to write all new software in Elixir wherever possible.  We recognize that functional programming requires a much different mindset and may not be for everyone.  Because of this, we've developed this simple programming assignment to determine if a potential candidate is a good match.
+Elixir is a functional language which lives on top of the Erlang Virtual Machine, just as Groovy or Clojure live on top of the Java Virtual Machine.  We at Pet Partners are functional programming enthusiest and have chosen to write all new software in Elixir wherever possible.  We recognize that functional programming requires a much different mindset and may not be for everyone.  Because of this, we've developed this simple programming exercise to determine if a potential candidate is a good match.
 
 ## Elixir
 [Elixir Website](http://elixir-lang.org) - Install instructions, links, etc..
