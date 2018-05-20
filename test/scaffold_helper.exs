@@ -20,7 +20,7 @@ defmodule ScaffoldHelper do
       %{status_code: 401} ->
         {:auth_failure, "Failed to upload file.  Authorization token is invalid"}
       %{status_code: status_code, body: body} ->
-        {:error, "Failed to create #{name} folder, POST returned #{status_code}: #{Poinson.decode!(body)}"}
+        {:error, "Failed to create #{name} folder, POST returned #{status_code}: #{Poison.decode!(body)}"}
     end
   end
 
